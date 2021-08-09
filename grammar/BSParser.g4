@@ -129,6 +129,11 @@ statements
     | store
     | math
     | numberAssignment
+    | send
+    ;
+
+send
+    : (usein)? variableDefinition SEND (unitTracker)? variable TO IDENTIFIER
     ;
 
 ifStatement
@@ -144,7 +149,7 @@ repeat
     ;
 
 heat
-    : (usein)? HEAT variable AT temperatureIdentifier (FOR timeIdentifier)?
+    :  HEAT variable AT temperatureIdentifier (FOR timeIdentifier)?
     ;
 
 dispose
@@ -153,7 +158,7 @@ dispose
     ;
 
 mix
-    : (usein)? variableDefinition MIX (unitTracker)? variable WITH (unitTracker)? variable (FOR timeIdentifier)?
+    :  (usein)? variableDefinition MIX (unitTracker)? variable WITH (unitTracker)? variable (ON IDENTIFIER)? (FOR timeIdentifier)?
     ;
 
 usein

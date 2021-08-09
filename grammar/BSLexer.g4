@@ -18,6 +18,7 @@ FUNCTIONS:      'functions';
 INSTRUCTIONS:   'instructions';
 
 // Operations
+SEND:           'send';
 DETECT:         'detect';
 MIX:            'mix';
 SPLIT:          'split';
@@ -34,6 +35,7 @@ AT:             'at';
 WITH:           'with';
 FOR:            'for';
 INTO:           'into';
+TO:             'to';
 TIMES:          'times';
 ON:             'on';
 OF:             'of';
