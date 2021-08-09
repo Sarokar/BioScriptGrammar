@@ -149,7 +149,8 @@ repeat
     ;
 
 heat
-    :  HEAT variable AT temperatureIdentifier (FOR timeIdentifier)?
+    :  HEAT variable AT IDENTIFIER AT temperatureIdentifier (FOR timeIdentifier)?
+    |  HEAT IDENTIFIER AT temperatureIdentifier (FOR timeIdentifier)?
     ;
 
 dispose
