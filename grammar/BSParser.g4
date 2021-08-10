@@ -134,7 +134,7 @@ statements
 
 send
     : (usein)? variableDefinition SEND (unitTracker)? IDENTIFIER TO IDENTIFIER (FOR timeIdentifier)?
-    | (usein)? variableDefinition SEND variable TO IDENTIFIER (FOR timeIdentifier)? //send a already exsisting variable to a stationary
+    | SEND variable TO IDENTIFIER (FOR timeIdentifier)? //send a already exsisting variable to a stationary
     ;
 
 ifStatement
